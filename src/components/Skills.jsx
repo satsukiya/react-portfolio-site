@@ -22,9 +22,11 @@ export const Skills = () => {
     dispatch({ type: actionTypes.fetch });
     axios.get(url)
       .then((response) => {
-        const languageList = response.data.map(res => res.language);
-        const countedLanguageList = generateLanguageCountObj(languageList);
-        dispatch({ type: actionTypes.success, payload: { languageList: countedLanguageList } });
+        setTimeout(() => {
+          const languageList = response.data.map(res => res.language);
+          const countedLanguageList = generateLanguageCountObj(languageList);
+          dispatch({ type: actionTypes.success, payload: { languageList: countedLanguageList } });
+        }, 5000);
       })
       .catch(() => {
         dispatch({ type: actionTypes.error });
