@@ -158,3 +158,16 @@ h3 {
 .skill-item {
   margin: 0 48px;
 }
+
+#workspace {
+  padding: 128px 0;
+  clear: both;
+}
+
+/* workspace */
+.workspace-container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
