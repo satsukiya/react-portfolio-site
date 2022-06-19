@@ -160,14 +160,23 @@ h3 {
 }
 
 #workspace {
-  padding: 128px 0;
+  background-color: #E84855;
+  padding: 32px 0;
   clear: both;
 }
 
 /* workspace */
 .workspace-container {
+  background-color: #30BFBA;
   color: white;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  height: 100%;
+}
+
+.block {
+  background-color: #30BFBA;
+  float: left;
+  width: 50%;
 }
