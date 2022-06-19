@@ -20,7 +20,7 @@ const Workspace = (props) => {
   const fetchReposApi = (src) => {
     //let url = "https://api.github.com/users/satsukiya/repos";
     //let url = "https://zipcloud.ibsnet.co.jp/api/search";
-    let url = "http://labs.bitmeister.jp/ohakon/json";
+    let url = "https://labs.bitmeister.jp/ohakon/json";
     axios.get(url, {
       params: {
         // ここにクエリパラメータを指定する
